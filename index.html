@@ -4,11 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
-    <link rel="stylesheet" src="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        
+  <div id="wrapper">
+    <div class="top-side">
+        <button class="clear-btn">CLEAR</button>
+        <button class="rainbow-btn">RAINBOW MODE</button>
+        <button class="eraser-btn">ERASER</button>
     </div>
+    <div class="middle">
+        <div class="left-side"></div>
+        <div class="gridBox"></div>
+        <div class="right-side"></div>
+    </div>
+    <div class="bottom-side">
+        <div class="slider">
+          <input type="range" min="1" max="60" value="16" id="grid-resize">
+          <p>Grid Size: <span class="grid-size">16x16</span></p>
+        </div>
+    </div>
+  </div>
+    <script src="script.js"></script>
 </body>
 </html>
