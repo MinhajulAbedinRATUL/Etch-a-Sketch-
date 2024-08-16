@@ -2,6 +2,7 @@ const gridBox = document.querySelector(".gridBox");
 const slider = document.querySelector('#grid-resize');
 const gridSize = document.querySelector('.grid-size');
 const clear = document.querySelector('.clear-btn');
+const normal = document.querySelector('.normal-btn');
 const rainbow = document.querySelector('.rainbow-btn');
 const eraser = document.querySelector('.eraser-btn');
 let gridWidth = 600;
@@ -56,6 +57,15 @@ clear.addEventListener('click', () => {
   });
 })
 
+//add hover effect for grid items
+normal.addEventListener('click', () => {
+  const grids = document.querySelectorAll(".grid");
+  grids.forEach((grid) => {
+    grid.addEventListener('mouseover', () => {
+      grid.style.backgroundColor = "#1F2937"
+    })
+  });
+})
 
 
 
